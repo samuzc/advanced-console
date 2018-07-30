@@ -1,0 +1,33 @@
+{
+  "name": "advanced-console",
+  "description": "Advanced console",
+  "version": "1.1.0",
+  "keywords": [
+    "log",
+    "logger",
+    "logging",
+    "time-stamp",
+    "memory",
+    "linenumber",
+    "line",
+    "console",
+    "console.log",
+    "debug",
+    "debugging"
+  ],
+  "dependencies": {
+    "console-stamp": "0.2.6"
+  },
+  "author": "Simon Kostenko <sam.ua@zoho.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samuzc/advanced-console.git"
+  },
+  "bugs": {
+    "url": "https://github.com/samuzc/advanced-console/issues"
+  },
+  "main": "index",
+  "scripts": {
+    "sample": "node sample.js"
+  }
+}
