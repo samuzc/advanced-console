@@ -29,5 +29,6 @@
   "main": "index",
   "scripts": {
     "sample": "node sample.js"
-  }
+  },
+  "license" : "MIT"
 }
