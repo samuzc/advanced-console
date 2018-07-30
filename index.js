@@ -9,7 +9,7 @@ require("console-stamp")(console, {
     let basepath = path.normalize(__dirname+'/..');
     if (stack.length > 4) {
       line = stack[3].match(/.*\((.*)\).*/);
-      if (line) line = path.relative(basepath, line[1]);
+      if (line) line = path.relative(path.join(basepath, "../.."), line[1]);
       else {
         line = stack[3];
         let i = line.indexOf(basepath);
