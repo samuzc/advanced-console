@@ -1,8 +1,6 @@
 # Advanced console
 
-[![npm-image]][npm-url]
-[npm-image]: https://img.shields.io/npm/v/advanced-console
-[npm-url]: https://npmjs.org/package/advanced-console
+[![npm](https://img.shields.io/npm/v/advanced-console)](https://img.shields.io/npm/v/advanced-console)
 
 Advanced console for node.js
 
