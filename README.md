@@ -1,4 +1,9 @@
 # Advanced console
+
+[![npm][npm-image]][npm-url]
+[npm-image]: https://img.shields.io/npm/v/advanced-console
+[npm-url]: https://npmjs.org/package/advanced-console
+
 Advanced console for node.js
 
 # Installation
