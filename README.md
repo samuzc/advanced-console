@@ -1,6 +1,6 @@
 # Advanced console
 
-[![npm](https://img.shields.io/npm/v/advanced-console)](https://img.shields.io/npm/v/advanced-console)
+[![npm](https://img.shields.io/npm/v/advanced-console)](https://www.npmjs.com/package/advanced-console)
 
 Advanced console for node.js
 
