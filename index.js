@@ -6,14 +6,23 @@ require("console-stamp")(console, {
     let e = new Error();
     let stack = e.stack.split("\n");
     let line = "";
-    let basepath = path.normalize(__dirname+'/..');
-    if (stack.length > 4) {
+    let basepath = path.normalize(__dirname);
+    if (stack.length > 3) {
       line = stack[3].match(/.*\((.*)\).*/);
-      if (line) line = path.relative(path.join(basepath, "../.."), line[1]);
-      else {
+      if (line) {
+        line = path.relative(path.join(basepath, "../.."), line[1]);
+      } else {
         line = stack[3];
         let i = line.indexOf(basepath);
-        if (i >= 0) line = line.substr(i + basepath.length + 1);
+        if (i >= 0) {
+          line = line.substr(i + basepath.length + 1);
+        } else {
+          basepath = path.normalize(__dirname+'/../..');
+          i = line.indexOf(basepath);
+          if (i >= 0) {
+            line = line.substr(i + basepath.length + 1);
+          }
+        }
       }
     }
     return line + ' [' + sizefmt(process.memoryUsage().rss) + ']';
