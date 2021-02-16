@@ -8,7 +8,7 @@ require("console-stamp")(console, {
     let stack = e.stack.split("\n");
     let line = "";
     let basepath = path.normalize(__dirname);
-    if (stack[3].match(/\/.*:\d+:\d+/)) {
+    if (stack[3] && stack[3].match(/\/.*:\d+:\d+/)) {
       line = stack[3].match(/\/.*:\d+:\d+/)[0]
     }
     if (!absolutePath) {
